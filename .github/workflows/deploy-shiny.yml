@@ -1,0 +1,30 @@
+on:
+  push:
+     branches:
+       - main
+
+name: Deploy template app to shinyapps.io
+
+jobs:
+  deploy-shiny:
+    name: Deploy to shinyapps.io
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.ACCESS_TOKEN }}
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        
+    steps:
+       - name: 🛎️ Checkout repository
+         uses: actions/checkout@v2
+         with:
+           fetch-depth: 0
+       - id: deploy
+         name: 💎 Deploy to shinyapps.io
+         uses: qwert666/shinyapps-actions@main
+         env:
+           SHINY_USERNAME: '${{ secrets.SHINY_USERNAME }}'
+           SHINY_TOKEN: ${{ secrets.SHINY_TOKEN }}
+           SHINY_SECRET: ${{ secrets.SHINY_SECRET }}
+           APP_NAME: 'myApp'
+           APP_DIR: ''
+          
