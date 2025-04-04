@@ -36,3 +36,4 @@ jobs:
           --token $SHINY_TOKEN \
           --secret $SHINY_SECRET \
           --title basic-app \
+          -a 12345678 # Replace with your app's ID from shinyapps.io

@@ -60,7 +60,7 @@ You're going to add 3 secrets.
 ## 6 Subsequent pushes
 
 1. Now that you have a deployment, we want to tell GitHub to push changes to that deployment rather than add a new one.
-2. Open the `deploy-shiny.yml` file in your VSCode IDE. Add this line to the bottom:
+2. Open the `deploy-shiny.yml` file in your VSCode IDE. Add the `-a` flag to the bottom of the file:
 
 
 ```yml
@@ -70,5 +70,5 @@ You're going to add 3 secrets.
           --token $SHINY_TOKEN \
           --secret $SHINY_SECRET \
           --title basic-app \
-            -a 14429977 # Replace with your app's ID from shinyapps.io
+          -a 14429977 # Replace with your app's ID from shinyapps.io
 ```
