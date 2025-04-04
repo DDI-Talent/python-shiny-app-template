@@ -73,6 +73,6 @@ You're going to add 3 secrets.
           --token $SHINY_TOKEN \
           --secret $SHINY_SECRET \
           --title basic-app \
-          -a 14429977 # Replace with your app's ID from shinyapps.io
+          -a 12345678 # Replace with your app's ID from shinyapps.io
 ```
 6. Push to GitHub again.
