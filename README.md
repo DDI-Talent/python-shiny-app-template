@@ -63,7 +63,7 @@ You're going to add 3 secrets.
 2. We need to edit a hidden file. To view hidden files in VSCode open File > Preferences > Settings
 3. Search for `Files: Exclude` 
 4. Hover over the entry that looks like `**/.*` and delete it.
-3. Open the `.github/workflows/deploy-shiny.yml` file in your VSCode IDE. Add the `-a` flag to the bottom of the file:
+5. Open the `.github/workflows/deploy-shiny.yml` file in your VSCode IDE. Add the `-a` flag to the bottom of the file:
 
 
 ```yml
@@ -75,3 +75,4 @@ You're going to add 3 secrets.
           --title basic-app \
           -a 14429977 # Replace with your app's ID from shinyapps.io
 ```
+6. Push to GitHub again.
