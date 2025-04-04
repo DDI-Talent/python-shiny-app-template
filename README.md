@@ -57,10 +57,13 @@ You're going to add 3 secrets.
 7. Go to your Applications -> All section in shinyapps.io and click on the arrow next to basic-app
 8. You should see your Shiny app in a browser at a URL similar to `https://b12345.shinyapps.io/basic-app/`
 
-## 6 Subsequent pushes
+## 6. Subsequent pushes
 
 1. Now that you have a deployment, we want to tell GitHub to push changes to that deployment rather than add a new one.
-2. Open the `deploy-shiny.yml` file in your VSCode IDE. Add the `-a` flag to the bottom of the file:
+2. We need to edit a hidden file. To view hidden files in VSCode open File > Preferences > Settings
+3. Search for `Files: Exclude` 
+4. Hover over the entry that looks like `**/.*` and delete it.
+3. Open the `.github/workflows/deploy-shiny.yml` file in your VSCode IDE. Add the `-a` flag to the bottom of the file:
 
 
 ```yml
