@@ -20,7 +20,7 @@ A template is a special GitHub repo that you can copy into your account. This te
 ## 2. Use this template
 
 1. At the top right of this page, click on `Use this template` -> `Create new repository`
-2. In the Repository name field, type `basic-app`
+2. In the Repository name field, type `basic-app`and make it a `public` repository
 
 ## 3. Add secrets to you GitHub repository
 
@@ -37,9 +37,9 @@ You're going to add 3 secrets.
 ## 4. Clone your new repository
 
 1. Go to the Noteable homepage [https://noteable.edina.ac.uk/login](https://noteable.edina.ac.uk/login) and start a `Standard Python 3 with VS-Code editor`
-2. From the Launcher page, click on `VSCode IDE`
+2. From the Launcher page, click on `VSCode IDE`. If you don't see the Launcher page, close any files that are open and it will appear.
 3. Click on `Clone Git Repository` from the Welcome page
-4. Select `Clone from GitHub` and follow the prompts to authorise GitHub
+4. Select `Clone from GitHub` and follow the prompts to authorise GitHub. CLick `Copy and continue to Github` and `Open` if it prompts you.
 5. Back in the VSCode IDE, select your `basic-app` repo from the Repository name field and open it
 
 ## 5. Pushing to GitHub 
@@ -50,7 +50,7 @@ You're going to add 3 secrets.
  ui.panel_title("Hello Shiny World!")
 ```
 2. Now that you've made a change, you can commit and push to Github. Click on the GitHub icon in the left menu.
-3. Click on the dropdown arrow on the blue Commit button and select `Commit & Push`
+3. Click on the dropdown arrow on the Commit button and select `Commit & Push`
 4. Click Yes if it asks if you'd like to stage and commit all changes.
 5. Enter a commit message `my first Shiny commit` and then close the COMMIT_EDITMSG file.
 6. Wait for a few minutes while it deploys to Shiny.
