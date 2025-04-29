@@ -78,20 +78,26 @@ python save_github_token.py
 2. Open the file `app.py` and change line 4 to say something like:
 
 ```
- ui.panel_title("Hello Bananas!")
+ ui.panel_title("Hello My name is yoru_name!")
 ```
 
 3. Now that you've made a change, you can commit and push to Github.
 4. In the left-hand-side menu, choose the third option from the top. It looks like a `diamond` (it is an icon for source control).
-4. Click on the dropdown arrow on the Commit button and select `Commit & Push`
-4. Click Yes if it asks if you'd like to stage and commit all changes.
-5. Enter a commit message `my first Shiny commit` and then close the COMMIT_EDITMSG file.
-6. Wait for a few minutes while it deploys to Shiny.
-7. Go to your Applications -> All section in shinyapps.io and click on the arrow next to basic-app
+5. On the top menu enable `Git > Simple Staging`. It will show you a simplified list of files you changed.
+6. On the left tick, tick a checkbox next to each file you want to push to github
+7. Below files there is a **Summary box**. In the box write a short message describing what you changed e.g. `I added my name to the panel title`.
+8. Click the blue **Commit** button 
+9. In the top (above the files) you will see an orange dot appear on one of the cloud icons (cloud with an arrow up).
+10. Click that Icon.
+11. You will see a message on bottom right `Successfully Pushed` and the orange dot will disappear.
 
-8. You should see your Shiny app in a browser at a URL similar to `https://b12345.shinyapps.io/applied-python-dashboard/`
-
-TODO: where do we find this url??
+# Watching your app being deployed
+1. Now your app is being deployed to shinyapp.io this will take a few minutes.
+2. To see the progress in github go to the `Actions` section of your repo, depending on your username it might look like this https://github.com/B1234/python-report-2025
+3. You will see an orange sminning top on the top, which after a few minutes (if all goes well) will become a green tick. This will mean it worked. 
+4. Let's see out app being deployed. To fing its url go to your `Applications` section of yoru shinyapps.io here [https://www.shinyapps.io/admin/#/applications/all](https://www.shinyapps.io/admin/#/applications/all)
+5. Click on the arrow next to `python-report-2025` 
+6. You should see your Shiny app open in another tab of your web browser at a URL similar to `https://b12345.shinyapps.io/python-report-2025`
 
 ## 6. Subsequent pushes
 
