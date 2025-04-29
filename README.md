@@ -8,9 +8,9 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 
 ## Prerequisistes
 
-- You will need a GitHub account setup on your student email account. It needs to be anonymous, so use your **EXAM NUMBER**. (you can change that later)
-- If you don't have a github account yet, go to [https://github.com/signup](https://github.com/signup) and sign up.
-- You should not have to make any payments r disclose any personal information. Use your student email if possible (It is just visible to you. You can change that later) and your exam number for other fields (like first and last name). 
+- You will need a GitHub account created with your student email account (e.g. `s12345678@ed.ac.uk`). This github account needs to be anonymous, so when asked use your **EXAM NUMBER** as your github username.
+- To create a new github account go to [https://github.com/signup](https://github.com/signup) and sign up.
+- You should not have to make any payments or disclose any personal information. Use your student email (It is visible only to you. You can change that later). 
 
 ## 1. Get started with a shinyapps.io account
 
