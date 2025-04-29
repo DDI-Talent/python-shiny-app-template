@@ -1,10 +1,6 @@
 # How to deploy your python Shiny app onto Shinyapp.io server
 
-This is a template that you can use to create a basic Shiny app and deploy to shinyapps.io
-
-## How it works
-
-- A template is a special GitHub repo that you can copy into your account. This template will deploy your Shiny app when you commit a change to GitHub. You can see its details in .github\worklflows folder
+This tutorial will take you through the steps of creating a basic Shiny app and deploying it to shinyapps.io. To achieve that we will push our code to github. And github will deploy it to shinyapp.io
 
 ## Prerequisistes
 
