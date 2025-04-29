@@ -1,8 +1,8 @@
 instructions = """
-# run this in terminal using: 
-# python save_github_token.py <your_github_username> <your_token>
-# for example:
-# python save_github_token.py B234234 ABCDE12345
+run this in terminal using: 
+python save_github_token.py "<your_github_username>" "<your_token>"
+for example:
+python save_github_token.py "B234234" "ABCDE12345"
 """
 import subprocess
 import os
