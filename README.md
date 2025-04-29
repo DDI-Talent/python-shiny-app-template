@@ -91,22 +91,21 @@ python save_github_token.py
 10. Click that Icon.
 11. You will see a message on bottom right `Successfully Pushed` and the orange dot will disappear.
 
-# Watching your app being deployed
+# 7. Watching your app being deployed
 1. Now your app is being deployed to shinyapp.io this will take a few minutes.
 2. To see the progress in github go to the `Actions` section of your repo, depending on your username it might look like this https://github.com/B1234/python-report-2025
 3. You will see an orange sminning top on the top, which after a few minutes (if all goes well) will become a green tick. This will mean it worked. 
 4. Let's see out app being deployed. To fing its url go to your `Applications` section of yoru shinyapps.io here [https://www.shinyapps.io/admin/#/applications/all](https://www.shinyapps.io/admin/#/applications/all)
-5. Click on the arrow next to `python-report-2025` 
-6. You should see your Shiny app open in another tab of your web browser at a URL similar to `https://b12345.shinyapps.io/python-report-2025`
+5. In a minute you will need the `app ID` which you see here. e.g. `1234567`. So keep this tab opened.
+6. Click on the arrow next to `python-report-2025` - it will open you Shiny app open in another tab of your web browser. URL will be similar to `https://b12345.shinyapps.io/python-report-2025`
 
-## 6. Subsequent pushes
+# 8. Subsequent pushes. Making sure you are updating your app, rather then creating a new one each time.
 
-How to make sure you are not deploying a different app every time, but rather that you are UPDATING the same app?
+1. Copy the `app ID` from the previous step e.g. `1234567`
+2. Open your github secrets again (see step 3 above) create one more secret:
 
-1. Now that you have a working deployed app on shiny apps, we will find its *unique ID* and tell our workflow to use that app_id from now on (rather than a new one).
-2. So once deployment is finished, go into [your shinyapp.io admin](https://www.shinyapps.io/admin/#/applications/all)  and find the id of the app you just deployed, eg `123456789`
-3. Open your github secrets again (see step 3 above) create one more secret:
+- Name: `SHINY_APP_ID`: paste in your app id you got from step above e.g. `1234567` 
 
-- Name: `SHINY_APP_ID`: here type your app id you got from above step, like `123456789` 
+# 9. Success
 
-4. From now on when you push to github, it will not create a new app, but rather update your existing one.
+1. From now on when you push to github, it will update your existing shiny app.
