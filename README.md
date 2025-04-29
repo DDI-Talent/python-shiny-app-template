@@ -34,7 +34,6 @@ You're going to add 3 secrets.
 - Name: `SHINY_ACCOUNT`: enter your Account name from shinyapps.io in the Secret field (this should be your *EXAM NUMBER*)
 - Name: `SHINY_SECRET`: copy the Secret from your Account -> Tokens section in shinyapps.io
 - Name: `SHINY_TOKEN`: copy the Token from your Account -> Tokens section in shinyapps.io
-
 - Name: `SHINY_APP_NAME`: here type your app name. e.g. for course applied python, call it 'applied-python-dashboard'
 
 You can leave this tab opened in your browser - we will come back here in 5 minutes to add one more secret.
@@ -81,7 +80,7 @@ python save_github_token.py
 6. Wait for a few minutes while it deploys to Shiny.
 7. Go to your Applications -> All section in shinyapps.io and click on the arrow next to basic-app
 
-8. You should see your Shiny app in a browser at a URL similar to `https://b12345.shinyapps.io/basic-app/`
+8. You should see your Shiny app in a browser at a URL similar to `https://b12345.shinyapps.io/applied-python-dashboard/`
 
 TODO: where do we find this url??
 
@@ -90,6 +89,9 @@ TODO: where do we find this url??
 How to make sure you are not deploying a different app every time, but rather that you are UPDATING the same app?
 
 1. Now that you have a working deployed app on shiny apps, we will find its *unique ID* and tell our workflow to use that app_id from now on (rather than a new one).
-2. So once deployment is finished, go into [your shinyapp.io admin](https://www.shinyapps.io/admin/#/applications/all)  and find the id of the app you just deployed, eg 123456789
-3. Open your github secrets again (see step XYZ above) create a secret called SHINY_APP_ID in which you want to copy this shiny app id like 123456789
+2. So once deployment is finished, go into [your shinyapp.io admin](https://www.shinyapps.io/admin/#/applications/all)  and find the id of the app you just deployed, eg `123456789`
+3. Open your github secrets again (see step 3 above) create one more secret:
+
+- Name: `SHINY_APP_ID`: here type your app id you got from above step, like `123456789` 
+
 4. From now on when you push to github, it will not create a new app, but rather update your existing one.
