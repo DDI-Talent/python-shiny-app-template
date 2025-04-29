@@ -10,7 +10,7 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 
 - You will need a GitHub account setup on your student email account. It needs to be anonymous, so use your **EXAM NUMBER**. (you can change that later)
 - If you don't have a github account yet, go to [https://github.com/signup](https://github.com/signup) and sign up.
-- You should not have to make any payments r disclose any personal information. Use your student email if possible (you can change that later). 
+- You should not have to make any payments r disclose any personal information. Use your student email if possible (It is just visible to you. You can change that later) and your exam number for other fields (like first and last name). 
 
 ## 1. Get started with a shinyapps.io account
 
@@ -26,7 +26,6 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 
 ## 3. Allow github to communicate with shinyapp.io (give github your shiny 'keys/tokens')
 
-1. In github, open the place where secrets live [https://github.com/settings/tokens](https://github.com/settings/tokens), or click: ProfileIcon > Settings > Developer_Settings > Personal Access Token > Tokens (classic)
 On your `python-report-2025` repository screen click on `Settings`
 2. In the left hand column, click `Secrets and variables` -> `Actions`
 3. Click `New repository secret`. 
@@ -40,29 +39,41 @@ You're going to add 3 secrets.
 
 You can leave this tab opened in your browser - we will come back here in 5 minutes to add one more secret.
 
-## 4. Clone your new repository
+## 4. Github token creation and saving (so that Noteable can push to your github):
 
-1. Go to the Noteable homepage [https://noteable.edina.ac.uk/login](https://noteable.edina.ac.uk/login) and start a `Standard Python 3`
-
-//TODO below needs review, so it's vanila noteable
-
-2. From the Launcher page, click on `VSCode IDE`. If you don't see the Launcher page, close any files that are open and it will appear.
-3. Click on `Clone Git Repository` from the Welcome page
-4. Select `Clone from GitHub` and follow the prompts to authorise GitHub. CLick `Copy and continue to Github` and `Open` if it prompts you.
-5. Back in the VSCode IDE, select your `basic-app` repo from the Repository name field and open it
-
-## 3. Github token creation (TODO):
-when we decribe creating github personal access token (classic) setting needs to be ticked: 'repo' and 'worflow'
 
 1. In github, open the place where secrets live [https://github.com/settings/tokens](https://github.com/settings/tokens), or click: ProfileIcon > Settings > Developer_Settings > Personal Access Token > Tokens (classic)
+2. In top right choose button `Generate new token` > `Generate new token (classic)`
+3. Set expiroation to `90 days` or `No expiration`
+4. tick boxes next to `repo` and `worflow`
+5. at the bottom click big green button "Generate Token"
+6. You will see a token looking a bit like this ` ghp_Y12345CDCDC`. Copy it to a file somewhere, because **THIS GETS SHOWN TO YOU ONLY ONCE EVER, SO IF YOU LOSE IT, YOU'LL NEED TO CREATE ANOTHER ONE**
+7. You'll need this token in the next step.
 
-## 5. Pushing to GitHub 
+
+## 5. Clone your new repository
+
+1. Go to the Noteable homepage [https://noteable.edina.ac.uk/login](https://noteable.edina.ac.uk/login) and start a `Standard Python 3`
+2. In the file browser (top tab on the left-hand-side menu) make sure you are in the top level folder (not insode of another folder).
+3. In the top menu choose git > clone repository
+4. Paste the full url of your repository from the end of step 2. It will look like `https://github.com/B1234/python-report-2025`
+5. In noteable open the terminal: In the top menu choose File > New > Terminal
+6. This opens a terminal window (where you can write commands to the computer). Copy-paste two lines below (without the surrounding brackets). You will be asked for your github username (e.g. `B1234`) and the token from previous step (like `ghp_Y12345CDCDC`).
+
+```
+cd python-report-2025
+python save_github_token.py
+```
+
+
+## 5. Pushing your changes from noteable to Github (which in turn will push them to shinyapps)
 
 1. Open the `app.py` file and alter the panel title. For example:
 
 ```
- ui.panel_title("Hello Shiny World!")
+ ui.panel_title("Hello Bananas!")
 ```
+
 2. Now that you've made a change, you can commit and push to Github. Click on the GitHub icon in the left menu.
 3. Click on the dropdown arrow on the Commit button and select `Commit & Push`
 4. Click Yes if it asks if you'd like to stage and commit all changes.
@@ -70,8 +81,9 @@ when we decribe creating github personal access token (classic) setting needs to
 6. Wait for a few minutes while it deploys to Shiny.
 7. Go to your Applications -> All section in shinyapps.io and click on the arrow next to basic-app
 
-// TODO confirm
 8. You should see your Shiny app in a browser at a URL similar to `https://b12345.shinyapps.io/basic-app/`
+
+TODO: where do we find this url??
 
 ## 6. Subsequent pushes
 
