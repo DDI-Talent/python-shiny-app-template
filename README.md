@@ -45,7 +45,6 @@ You can leave this tab opened in your browser - we will come back here in 5 minu
 
 ## 4. Github token creation and saving (so that Noteable can push to your github):
 
-
 1. In github, open the place where secrets live [https://github.com/settings/tokens](https://github.com/settings/tokens), or click: Profile Icon > Settings > Developer_Settings > Personal Access Token > Tokens (classic)
 2. It is possible that github will ask you for your password again at this point.
 3. In top right choose button `Generate new token` > `Generate new token (classic)`
@@ -91,7 +90,8 @@ python save_github_token.py
 10. Click that Icon.
 11. You will see a message on bottom right `Successfully Pushed` and the orange dot will disappear.
 
-# 7. Watching your app being deployed
+## 7. Watching your app being deployed
+
 1. Now your app is being deployed to shinyapp.io this will take a few minutes.
 2. To see the progress in github go to the `Actions` section of your repo, depending on your username it might look like this https://github.com/B1234/python-report-2025
 3. You will see an orange sminning top on the top, which after a few minutes (if all goes well) will become a green tick. This will mean it worked. 
@@ -99,13 +99,13 @@ python save_github_token.py
 5. In a minute you will need the `app ID` which you see here. e.g. `1234567`. So keep this tab opened.
 6. Click on the arrow next to `python-report-2025` - it will open you Shiny app open in another tab of your web browser. URL will be similar to `https://b12345.shinyapps.io/python-report-2025`
 
-# 8. Subsequent pushes. Making sure you are updating your app, rather then creating a new one each time.
+## 8. Subsequent pushes. Making sure you are updating your app, rather then creating a new one each time.
 
 1. Copy the `app ID` from the previous step e.g. `1234567`
 2. Open your github secrets again (see step 3 above) create one more secret:
 
 - Name: `SHINY_APP_ID`: paste in your app id you got from step above e.g. `1234567` 
 
-# 9. Success
+## 9. Success
 
 1. From now on when you push to github, it will update your existing shiny app.
