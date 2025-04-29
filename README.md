@@ -37,7 +37,7 @@ You're going to add these secrets:
 - Name: `SHINY_TOKEN`. Value: from the same place as step above copy the `Token` part. it will look like `ABCDEFGEF`
 - Name: `SHINY_APP_NAME`: here type your app name for examle `applied-python-dashboard`
 
-You can leave this tab opened in your browser - we will come back here in 5 minutes to add one more secret.
+5. You can leave this tab opened in your browser - we will come back here in 5 minutes to add one more secret.
 
 ## 4. Github token creation and saving (so that Noteable can push to your github):
 
@@ -48,8 +48,8 @@ You can leave this tab opened in your browser - we will come back here in 5 minu
 5. Set expiroation to `90 days` or `No expiration`
 6. Tick boxes next to `repo` and `worflow`
 7. At the bottom click big green button **Generate Token**
-7. You will see a token looking a bit like this ` ghp_Y12345CDCDC`. Copy it to a file somewhere, because **THIS GETS SHOWN TO YOU ONLY ONCE EVER, SO IF YOU LOSE IT, YOU'LL NEED TO CREATE ANOTHER ONE**
-8. You'll need this token in the next step, keep this tab opened as well.
+8. You will see a token looking a bit like this ` ghp_Y12345CDCDC`. Copy it to a file somewhere, because **THIS GETS SHOWN TO YOU ONLY ONCE EVER, SO IF YOU LOSE IT, YOU'LL NEED TO CREATE ANOTHER ONE**
+9. You'll need this token in the next step, keep this tab opened as well.
 
 
 ## 5. Bring (clone) your your new repository to Noteable
