@@ -17,6 +17,9 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 1. Go to [https://login.shinyapps.io/register](https://login.shinyapps.io/register) and click `Sign up with GitHub`
 2. Use your **EXAM NUMBER** as your Account name.
 3. If it asks `Please select your destination`, click **shinyapps.io**
+4. Once you createx an account go to the Shiny Tokens [https://www.shinyapps.io/admin/#/tokens](https://www.shinyapps.io/admin/#/tokens).
+5. If you do not see any Token - Secret pairs, click the **+ Add Token** button
+6. Keep this browser tab opened, you will need it in a few minutes.
 
 ## 2. Create a github repo for the project (using the template you are reading now)
 
@@ -29,11 +32,12 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 1. On your `python-report-2025` repository screen click on `Settings`
 2. In the left-hand column, click `Secrets and variables` -> `Actions`
 3. You probably will end on a page like this but with your username `https://github.com/B123456/python-report-2025/settings/secrets/actions`
-4. Click `New repository secret`. 
+4. Click `New repository secret` button. 
 
-You're going to add 3 secrets.
-- Name: `SHINY_ACCOUNT`: enter your Account name from shinyapps.io in the Secret field (this should be your *EXAM NUMBER*)
-- Name: `SHINY_SECRET`: copy the Secret from your Account -> Tokens section in shinyapps.io
+You're going to add those secrets:
+
+- Name: `SHINY_ACCOUNT`: enter your Account name from shinyapps.io in the Secret field (this should be your **EXAM NUMBER**)
+- Name: `SHINY_SECRET`: to get this, go to your shiny account tokens page [https://www.shinyapps.io/admin/#/tokens](https://www.shinyapps.io/admin/#/tokens) or in shinyapps.io go to Account -> Tokens
 - Name: `SHINY_TOKEN`: copy the Token from your Account -> Tokens section in shinyapps.io
 - Name: `SHINY_APP_NAME`: here type your app name. e.g. for course applied python, call it 'applied-python-dashboard'
 
