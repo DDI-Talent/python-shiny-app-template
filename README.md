@@ -21,14 +21,15 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 ## 2. Create a github repo for the project (using the template you are reading now)
 
 1. On github visit this repository page and make sure you are logged in as you. [https://github.com/DDI-Talent/python-shiny-app-template](https://github.com/DDI-Talent/python-shiny-app-template)
-2. At the top right of this page, click on `Use this template` -> `Create new repository`
-3. In the Repository name field, type name that describes what you are building e.g. `python-report-2025` and make it a `public` repository
+2. At the top right of this page, click on `Use this template` > `Create new repository`
+3. In the Repository name field, type the name that describes what you are building e.g. `python-report-2025` and make it a `public` repository
 
-## 3. Allow github to communicate with shinyapp.io (give github your shiny 'keys/tokens')
+## 3. Allow github to communicate with shinyapps.io (give github your shiny 'keys/tokens')
 
-On your `python-report-2025` repository screen click on `Settings`
-2. In the left hand column, click `Secrets and variables` -> `Actions`
-3. Click `New repository secret`. 
+1. On your `python-report-2025` repository screen click on `Settings`
+2. In the left-hand column, click `Secrets and variables` -> `Actions`
+3. You probably will end on a page like this but with your username `https://github.com/B123456/python-report-2025/settings/secrets/actions`
+4. Click `New repository secret`. 
 
 You're going to add 3 secrets.
 - Name: `SHINY_ACCOUNT`: enter your Account name from shinyapps.io in the Secret field (this should be your *EXAM NUMBER*)
