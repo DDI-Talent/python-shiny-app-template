@@ -18,9 +18,9 @@ This is a template that you can use to create a basic Shiny app and deploy to sh
 2. Use your **EXAM NUMBER** as your Account name.
 3. If it asks `Please select your destination`, click **shinyapps.io**
 
-## 2. Create a github repo with an example shinyapp (using this github repo template you are reading now)
+## 2. Create a github repo for the project (using the template you are reading now)
 
-1. On github visit this repository page and make sure you are logged in as you. (https://github.com/DDI-Talent/python-shiny-app-template)[https://github.com/DDI-Talent/python-shiny-app-template]
+1. On github visit this repository page and make sure you are logged in as you. [https://github.com/DDI-Talent/python-shiny-app-template](https://github.com/DDI-Talent/python-shiny-app-template)
 2. At the top right of this page, click on `Use this template` -> `Create new repository`
 3. In the Repository name field, type name that describes what you are building e.g. `python-report-2025` and make it a `public` repository
 
