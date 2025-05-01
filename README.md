@@ -4,9 +4,10 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
 
 ## Pre-requisistes
 
--   You will need a GitHub account created with your student email account (e.g. `s12345678@ed.ac.uk`). This github account needs to be anonymous, so when asked use your **EXAM NUMBER** as your github username.
--   To create a new github account go to <https://github.com/signup> and sign up.
--   You should not have to make any payments or disclose any personal information. Use your student email (It is visible only to you. You can change that later).
+- You will need a GitHub account created with your student email account (e.g. `s12345678@ed.ac.uk`). This github account needs to be anonymous, so when asked use your **EXAM NUMBER** as your GitHub username.
+- If you already have a GitHub account, please change your username to your **EXAM NUMBER** OR create a new GitHub account for this assessment.
+- To create a new github account go to <https://github.com/signup> and sign up.
+- You should not have to make any payments or disclose any personal information. Use your student email (It is visible only to you. You can change that later).
 
 ## 1. Get started with a shinyapps.io account
 
@@ -32,8 +33,8 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
 
 You're going to add these secrets:
 
--   Name: `SHINY_ACCOUNT`. Value: enter your Account name from shinyapps.io in the github big text field (this should be your **EXAM NUMBER**)
--   Name: `SHINY_SECRET`. Value: Copy past the secret from the end of step 1 (you'll need to click `Show` \> `Show Secret`). It will look like `lkjHkwed+hweFGhwei/`
+-   Name: `SHINY_ACCOUNT`. Value: enter your **Account name** from shinyapps.io in the github big text field (this should be your **EXAM NUMBER**)
+-   Name: `SHINY_SECRET`. Value: Copy paste the secret from the end of step 1 (you'll need to click `Show` \> `Show Secret`). It will look like `lkjHkwed+hweFGhwei/` and is embedded in the code snippet. Copy only the secret, not the whole code snippet.
 -   Name: `SHINY_TOKEN`. Value: from the same place as step above copy the `Token` part. it will look like `ABCDEFGEF`
 -   Name: `SHINY_APP_NAME`: here type your app name for example `applied-python-dashboard`
 
@@ -54,11 +55,12 @@ You're going to add these secrets:
 ## 5. Bring (clone) your your new repository to Noteable
 
 1.  Go to the Noteable homepage <https://noteable.edina.ac.uk/login> and start a `Standard Python 3`
-2.  In the file browser (top tab on the left-hand-side menu) make sure you are not inside of any folder.
-3.  In the top menu choose `git > clone repository`
-4.  Paste the full url of your repository from the end of step 2. It will look like `https://github.com/B1234/python-report-2025`
-5.  In Noteable open the terminal: In the top menu choose `File > New > Terminal`
-6.  This opens a terminal window (where you can write commands to the computer). Copy-paste the two lines below (without the surrounding brackets). Note: if you called your repo something else than `python-report-2025` you'll need to adjust the first line. You will be asked for your github username (e.g. `B1234`) and the token from previous step (like `ghp_Y12345CDCDC`).
+2.  Make sure you have the left sidebar open. View --> Appearance --> show left sidebar. View --> show left activity bar.
+3.  In the file browser (top tab on the left-hand-side menu) make sure you are not inside of any folder.
+4.  In the top menu choose `git > clone repository`
+5.  Paste the full url of your repository from the end of step 2. It will look like `https://github.com/B1234/python-report-2025`
+6.  In Noteable open the terminal: In the top menu choose `File > New > Terminal`
+7.  This opens a terminal window (where you can write commands to the computer). Copy-paste the two lines below (without the surrounding brackets). Note: if you called your repo something else than `python-report-2025` you'll need to adjust the first line. You will be asked for your github username (e.g. `B1234`) and the token from previous step (like `ghp_Y12345CDCDC`).
 
 ```         
 cd python-report-2025
