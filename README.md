@@ -11,6 +11,10 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
 
 ## The video step-through matches the steps below.
 
+<a href="https://media.ed.ac.uk/media/1_r9xv70j5">
+    <img src="./video-image.png" width="500px">
+</a>
+
 [Link to video >>](https://media.ed.ac.uk/media/1_r9xv70j5)
 
 ## 1. Get started with a shinyapps.io account
