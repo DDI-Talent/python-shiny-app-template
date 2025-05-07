@@ -9,6 +9,12 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
 - To create a new github account go to <https://github.com/signup> and sign up.
 - You should not have to make any payments or disclose any personal information. Use your student email (It is visible only to you. You can change that later).
 
+## The video step-through matches the steps below.
+
+<iframe id="kaltura_player" type="text/javascript"  src='https://cdnapisec.kaltura.com/p/2010292/embedPlaykitJs/uiconf_id/55171522?iframeembed=true&entry_id=1_r9xv70j5&config[provider]={"widgetId":"1_e6d5u90j"}'  style="width: 608px;height: 402px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Kaltura Player"></iframe>
+
+[Link to video >>](https://media.ed.ac.uk/media/Deploying+to+Python+Shiny+Dashboard+from+Noteable+using+Github+Actions/1_r9xv70j5)
+
 ## 1. Get started with a shinyapps.io account
 
 1.  Go to <https://login.shinyapps.io/register> and click `Sign up with GitHub`
