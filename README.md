@@ -11,7 +11,7 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
 
 ## The video step-through matches the steps below.
 
-[Link to video >>](https://media.ed.ac.uk/media/Deploying+to+Python+Shiny+Dashboard+from+Noteable+using+Github+Actions/1_r9xv70j5)
+[Link to video >>](https://media.ed.ac.uk/media/1_r9xv70j5)
 
 ## 1. Get started with a shinyapps.io account
 
