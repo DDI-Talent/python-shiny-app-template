@@ -15,6 +15,8 @@ This tutorial will take you through the steps of creating a basic Shiny app and 
     <img src="./video-image.png" width="500px">
 </a>
 
+(16mins 18s)
+
 [Link to video >>](https://media.ed.ac.uk/media/1_r9xv70j5)
 
 ## 1. Get started with a shinyapps.io account
